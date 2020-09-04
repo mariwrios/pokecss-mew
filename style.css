@@ -710,6 +710,17 @@ body {
   clip-path: polygon(-7% 11%, 97% 22%, 13% 94%, -12% 53%);
 }
 
+.pierna__derecha-container {
+  position: relative;
+  top: -48px;
+  left: -34px;
+  z-index: -1;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-name: pierna__derecha;
+  animation-iteration-count: infinite;
+}
+
 .pierna__muslo-derecho {
   top: 81px;
   left: -80px;
@@ -1516,5 +1527,24 @@ body {
     transform: rotate(379deg);
     top: 15px;
     left: -16px;
+  }
+}
+
+@keyframes pierna__derecha {
+  0% {
+    transform: rotate(3deg);
+    top: -47px;
+    left: -27px;
+  }
+
+  50% {
+    transform: rotate(-4deg);
+    left: -42px;
+    top: -51px;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: -48px;
+    left: -33px;
   }
 }
