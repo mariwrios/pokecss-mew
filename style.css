@@ -28,6 +28,11 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  animation-duration: 6s;
+  animation-name: personaje;
+  animation-direction: initial;
+  animation-iteration-count: infinite;
 }
 
 .craneo__container {
@@ -40,6 +45,11 @@ body {
   flex-direction: column;
   justify-content: center;
   transform: rotate(-7deg);
+
+  animation-name: rostro;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .craneo__cachetes {
@@ -195,8 +205,15 @@ body {
 .ojo__izquierdo {
   top: 19px;
   left: -6px;
+  display: block;
   position: relative;
+  visibility: visible;
   transform: scaleX(-1) rotate(-7deg);
+
+  animation-delay: 0.5s;
+  animation-duration: 6s;
+  animation-name: ojoizquierdo;
+  animation-iteration-count: infinite;
 }
 
 .ojo__izquierdo-esclerotica {
@@ -941,10 +958,16 @@ body {
 }
 
 .pierna__izquierda-container {
-  position: absolute;
   top: 15px;
   left: -16px;
+  z-index: 10;
+  position: absolute;
   transform: rotate(379deg);
+
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-name: pierna__izquierda;
+  animation-iteration-count: infinite;
 }
 
 .muslo__izquierdo {
@@ -965,58 +988,58 @@ body {
   clip-path: polygon(-6% -12%, 98% 0%, 90% 25%, 2% 40%);
 }
 .muslo__izquierdo2 {
-  position: absolute;
-  height: 118px;
-  width: 103px;
-  background-color: #deaed7;
   top: 81px;
   left: -21px;
+  z-index: -3;
+  width: 103px;
+  height: 118px;
+  position: absolute;
+  border-bottom: none;
   border: 1px solid gray;
   border-top-left-radius: 44px;
-  border-bottom: none;
+  background-color: #deaed7;
   border-top-right-radius: 68px;
-  border-bottom-right-radius: 110px;
   border-bottom-left-radius: 10px;
-  clip-path: polygon(11% 0%, 100% 0%, 100% 0%, 100% 9%, 48% 10%, 25% 12%, 18% 10%, 0 0);
+  border-bottom-right-radius: 110px;
   transform: rotate(433deg) scale(-1);
-  z-index: -3;
+  clip-path: polygon(11% 0%, 100% 0%, 100% 0%, 100% 9%, 48% 10%, 25% 12%, 18% 10%, 0 0);
 }
 
 .pierna__izquierda-union {
-  position: absolute;
-  height: 97px;
-  width: 105px;
-  top: 182px;
   left: 6px;
-  transform: rotate(427deg);
+  top: 182px;
+  width: 105px;
+  height: 97px;
+  position: absolute;
   border-radius: 19px;
   border: 1px solid gray;
+  transform: rotate(427deg);
   clip-path: polygon(0% 122%, 98% 0%, 79% 24%, 3% 69%);
 }
 
 .pie__izquierda {
-  position: absolute;
-  height: 8px;
-  width: 105px;
   top: 263px;
   left: -38px;
+  z-index: -3;
+  height: 8px;
+  width: 105px;
+  position: absolute;
   border-bottom: 1px solid gray;
   transform: rotate(259deg) scaley(-1);
-  z-index: -3;
 }
 
 .plantaDepie__izquierda {
-  position: absolute;
+  top: 244px;
+  z-index: -3;
   height: 8px;
   width: 95px;
-  top: 244px;
   left: -68px;
-  border: 1px solid gray;
   border-top: none;
   border-left: 0px;
+  position: absolute;
+  border: 1px solid gray;
   border-bottom-right-radius: 16px;
   transform: rotate(261deg) scaley(-1);
-  z-index: -3;
 }
 
 .plantaDepie__izquierdo-sombra1 {
@@ -1414,4 +1437,84 @@ body {
     39% 106%,
     20% 81%
   );
+}
+
+@keyframes rostro {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes personaje {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(0, 5vh);
+  }
+  20% {
+    transform: translate(10vw, 0);
+  }
+  30% {
+    transform: translate(0, -10vh);
+  }
+  40% {
+    transform: translate(-10vw, 0vh);
+  }
+  50% {
+    transform: translate(0, 10vh);
+  }
+  70% {
+    transform: translate(20vw, -5vh) rotate(10deg);
+  }
+  88% {
+    transform: translate(-15vw, 25vh) rotate(-230deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+
+@keyframes pierna__izquierda {
+  0% {
+    transform: rotate(396deg);
+    left: 22px;
+    top: 31px;
+  }
+
+  50% {
+    transform: rotate(380deg);
+    left: -14px;
+    top: 14px;
+  }
+  100% {
+    transform: rotate(379deg);
+    top: 15px;
+    left: -16px;
+  }
 }
