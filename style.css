@@ -28,10 +28,9 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
   animation-duration: 6s;
   animation-name: personaje;
-  animation-direction: initial;
+  animation-direction: normal;
   animation-iteration-count: infinite;
 }
 
@@ -1482,32 +1481,31 @@ body {
 
 @keyframes personaje {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 0) scale(0.6);
   }
-
   10% {
-    transform: translate(0, 5vh);
+    transform: translate(0, 5vh) scale(0.6);
   }
   20% {
-    transform: translate(10vw, 0);
+    transform: translate(10vw, 0) scale(0.7);
   }
   30% {
-    transform: translate(0, -10vh);
+    transform: translate(0, -10vh) scale(0.8);
   }
   40% {
-    transform: translate(-10vw, 0vh);
+    transform: translate(-10vw, 0vh) scale(0.9);
   }
   50% {
-    transform: translate(0, 10vh);
+    transform: translate(0, 10vh) scale(1);
   }
   70% {
-    transform: translate(20vw, -5vh) rotate(10deg);
+    transform: translate(20vw, -5vh) rotate(10deg) scale(0.9);
   }
   88% {
-    transform: translate(-15vw, 25vh) rotate(-230deg);
+    transform: translate(-15vw, 25vh) rotate(-230deg) scale(0.7);
   }
   100% {
-    transform: translate(0, 0) rotate(-360deg);
+    transform: translate(0, 0) rotate(-360deg) scale(0.6);
   }
 }
 
