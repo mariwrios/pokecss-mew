@@ -1494,7 +1494,7 @@ body {
 
 @keyframes personaje {
   0% {
-    transform: translate(0, 0) scale(0.5);
+    transform: translate(0, 0) scale(0.4);
   }
   10% {
     transform: translate(0, 5vh) scale(0.6);
@@ -1506,10 +1506,10 @@ body {
     transform: translate(0, -10vh) scale(0.8);
   }
   40% {
-    transform: translate(-10vw, 0vh) scale(0.9);
+    transform: translate(-10vw, 0vh) scale(1);
   }
   50% {
-    transform: translate(0, 10vh) scale(2);
+    transform: translate(0, 10vh) scale(2.5);
   }
   70% {
     transform: translate(20vw, -5vh) rotate(10deg) scale(1);
@@ -1518,21 +1518,20 @@ body {
     transform: translate(-15vw, 25vh) rotate(-230deg) scale(0.7);
   }
   100% {
-    transform: translate(0, 0) rotate(-360deg) scale(0.5);
+    transform: translate(0, 0) rotate(-360deg) scale(0.4);
   }
 }
 
 @keyframes brazo_derecho {
   0% {
+    transform: rotate(9deg) scale(0.9);
+    left: -19px;
+    top: -47px;
+  }
+  100% {
     transform: rotate(-4deg) scale(0.9);
     left: -38px;
     top: -36px;
-  }
-
-  100% {
-    transform: rotate(4deg) scale(0.9);
-    left: -27px;
-    top: -43px;
   }
 }
 
@@ -1563,9 +1562,9 @@ body {
     top: 14px;
   }
   100% {
-    transform: rotate(379deg);
-    top: 15px;
-    left: -16px;
+    transform: rotate(390deg);
+    top: 29px;
+    left: 6px;
   }
 }
 
