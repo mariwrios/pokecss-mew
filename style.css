@@ -1573,93 +1573,93 @@ body {
 @keyframes ojoderecho {
   0% {
     opacity: 1;
-  }
+}
+1% {
+    opacity: 1;
+}
 
-  1% {
-    opacity: 1;
-  }
-  2% {
+2% {
     opacity: 0;
-  }
-  3% {
+}
+3% {
     opacity: 1;
-  }
-  5% {
+}
+5% {
     opacity: 1;
-  }
-  22% {
+}
+22% {
     opacity: 1;
-  }
-  23% {
+}
+23% {
     opacity: 0;
-  }
-  32% {
+}
+32% {
     opacity: 0;
-  }
-  33% {
+}
+33% {
     opacity: 1;
-  }
-  50% {
+}
+65% {
     opacity: 1;
-  }
-  51% {
+}
+66% {
     opacity: 0;
-  }
-  81% {
+}
+81% {
     opacity: 0;
-  }
-  99% {
+}
+82% {
     opacity: 1;
-  }
-  100% {
+}
+100% {
     opacity: 1;
-  }
+}
 }
 
 @keyframes ojoizquierdo {
   0% {
     opacity: 1;
-  }
+}
+1% {
+    opacity: 1;
+}
 
-  1% {
-    opacity: 1;
-  }
-  2% {
+2% {
     opacity: 0;
-  }
-  3% {
+}
+3% {
     opacity: 1;
-  }
-  5% {
+}
+5% {
     opacity: 1;
-  }
-  22% {
+}
+22% {
     opacity: 1;
-  }
-  23% {
+}
+23% {
     opacity: 0;
-  }
-  32% {
+}
+32% {
     opacity: 0;
-  }
-  33% {
+}
+33% {
     opacity: 1;
-  }
-  50% {
+}
+65% {
     opacity: 1;
-  }
-  51% {
+}
+66% {
     opacity: 0;
-  }
-  81% {
+}
+81% {
     opacity: 0;
-  }
-  99% {
+}
+82% {
     opacity: 1;
-  }
-  100% {
+}
+100% {
     opacity: 1;
-  }
+}
 }
 
 @keyframes brazo_izquierdo {
