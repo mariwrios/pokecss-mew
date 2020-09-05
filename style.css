@@ -3,6 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   background-color: #161616;
@@ -340,15 +341,13 @@ body {
 .ojo__derecho-cerrado {
   top: -25px;
   left: 27px;
-  display: block;
-  position: absolute;
-  visibility: visible;
-  transform: rotate(-86deg);
-  height: 35px;
   width: 33px;
+  height: 35px;
+  position: absolute;
   border-radius: 42px;
-  border: 2px solid rgb(68, 68, 69);
+  transform: rotate(-86deg);
   background: rgb(248, 219, 237);
+  border: 2px solid rgb(68, 68, 69);
   clip-path: polygon(33% 0%, 100% 0%, 100% 100%);
 }
 
@@ -448,10 +447,10 @@ body {
 }
 
 .cuerpo__container {
-  position: relative;
   display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 .cuello {
@@ -571,9 +570,9 @@ body {
   position: relative;
   transform: scale(0.9) rotate(-13deg);
 
-  animation-name: brazo_izquierdo;
   animation-duration: 3s;
   animation-direction: alternate;
+  animation-name: brazo_izquierdo;
   animation-iteration-count: infinite;
 }
 .brazo__izquierdo {
@@ -1128,65 +1127,65 @@ body {
 }
 
 .tobillo__izquierda {
-  position: absolute;
-  height: 20px;
-  width: 15px;
   top: 180px;
   left: -32px;
+  width: 15px;
+  height: 20px;
+  border-radius: 7px;
+  position: absolute;
+  transform: rotate(377deg);
   border-right: 1px solid gray;
   border-bottom: 1px solid gray;
-  transform: rotate(377deg);
-  border-radius: 7px;
   clip-path: polygon(98% 94%, 135% -45%, 39% 44%, 99% 140%);
 }
 
 .tobillo__izquierdo-relleno {
-  position: absolute;
-  height: 62px;
-  z-index: -4;
-  width: 21px;
-  background-color: rgb(248, 219, 237);
   top: 163px;
   left: -17px;
+  width: 21px;
+  z-index: -4;
+  height: 62px;
+  position: absolute;
   transform: rotate(17deg);
+  background-color: rgb(248, 219, 237);
 }
 
 .tobillo__izquierdo-sombra1 {
-  position: absolute;
-  height: 29px;
-  z-index: -3;
-  border-radius: 14px;
-  width: 11px;
-  background-color: #deaed7;
   top: 178px;
   left: -17px;
+  width: 11px;
+  z-index: -3;
+  height: 29px;
+  position: absolute;
+  border-radius: 14px;
   transform: rotate(18deg);
+  background-color: #deaed7;
 }
 
 .tobillo__izquierdo-sombra2 {
-  position: absolute;
-  height: 41px;
-  z-index: -3;
-  width: 20px;
-  background-color: #deaed7;
   top: 200px;
   left: -28px;
-  transform: rotate(-9deg);
+  width: 20px;
+  height: 41px;
+  z-index: -3;
+  position: absolute;
   border-radius: 13px;
+  transform: rotate(-9deg);
+  background-color: #deaed7;
   border-top-right-radius: 0px;
   clip-path: polygon(41% 0, 124% 0%, 33% 66%, 19% 99%, 0 100%, 0 0);
 }
 
 .LineaDedo1__izquierda {
-  position: absolute;
-  width: 16px;
   top: 325px;
   left: -7px;
-  border: 1px solid gray;
+  z-index: -3;
+  width: 16px;
   border-top: none;
   border-left: 0px;
+  position: absolute;
   transform: rotate(273deg);
-  z-index: -3;
+  border: 1px solid gray;
 }
 
 .dedo1__izquierda {
@@ -1573,93 +1572,93 @@ body {
 @keyframes ojoderecho {
   0% {
     opacity: 1;
-}
-1% {
+  }
+  1% {
     opacity: 1;
-}
+  }
 
-2% {
+  2% {
     opacity: 0;
-}
-3% {
+  }
+  3% {
     opacity: 1;
-}
-5% {
+  }
+  5% {
     opacity: 1;
-}
-22% {
+  }
+  22% {
     opacity: 1;
-}
-23% {
+  }
+  23% {
     opacity: 0;
-}
-32% {
+  }
+  32% {
     opacity: 0;
-}
-33% {
+  }
+  33% {
     opacity: 1;
-}
-65% {
+  }
+  65% {
     opacity: 1;
-}
-66% {
+  }
+  66% {
     opacity: 0;
-}
-81% {
+  }
+  81% {
     opacity: 0;
-}
-82% {
+  }
+  82% {
     opacity: 1;
-}
-100% {
+  }
+  100% {
     opacity: 1;
-}
+  }
 }
 
 @keyframes ojoizquierdo {
   0% {
     opacity: 1;
-}
-1% {
+  }
+  1% {
     opacity: 1;
-}
+  }
 
-2% {
+  2% {
     opacity: 0;
-}
-3% {
+  }
+  3% {
     opacity: 1;
-}
-5% {
+  }
+  5% {
     opacity: 1;
-}
-22% {
+  }
+  22% {
     opacity: 1;
-}
-23% {
+  }
+  23% {
     opacity: 0;
-}
-32% {
+  }
+  32% {
     opacity: 0;
-}
-33% {
+  }
+  33% {
     opacity: 1;
-}
-65% {
+  }
+  65% {
     opacity: 1;
-}
-66% {
+  }
+  66% {
     opacity: 0;
-}
-81% {
+  }
+  81% {
     opacity: 0;
-}
-82% {
+  }
+  82% {
     opacity: 1;
-}
-100% {
+  }
+  100% {
     opacity: 1;
-}
+  }
 }
 
 @keyframes brazo_izquierdo {
