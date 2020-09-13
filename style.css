@@ -1266,6 +1266,11 @@ body {
   top: -24px;
   left: 31px;
   position: relative;
+
+  animation-name: cola__container;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .cola__interna1 {
@@ -1417,6 +1422,14 @@ body {
   clip-path: polygon(23% 87%, 100% 88%, 86% 100%, 23% 100%);
 }
 
+.cola__punta-container {
+  position: relative;
+
+  animation-name: punta__cola;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
 .cola__punta {
   top: -13px;
   z-index: 1;
@@ -1710,5 +1723,130 @@ body {
     transform: rotate(0deg);
     top: -48px;
     left: -33px;
+  }
+}
+
+@keyframes cola__container {
+
+  20% {
+    transform: rotate(-45deg);
+    top: -131px;
+    left: -71px;
+  }
+
+  35% {
+    transform: none;
+    position: relative;
+    top: -24px;
+    left: 31px;
+  }
+
+  48% {
+    transform: none;
+    position: relative;
+    top: -24px;
+    left: 31px;
+  }
+  55% {
+    transform: rotate(-45deg);
+    top: -131px;
+    left: -71px;
+  }
+ 
+
+  56% {
+    transform: rotate(-45deg);
+    top: -131px;
+    left: -71px;
+  }
+
+  68% {
+    transform: none;
+    position: relative;
+    top: -24px;
+    left: 31px;
+  }
+
+  80% {
+    transform: none;
+    position: relative;
+    top: -24px;
+    left: 31px;
+  }
+
+  90% {
+    transform: rotate(-45deg);
+    top: -131px;
+    left: -71px;
+  }
+  100%{
+    transform: none;
+    position: relative;
+    top: -24px;
+    left: 31px;
+  }
+}
+
+@keyframes punta__cola {
+  20% {
+    transform: scaleY(-1) rotate(-50deg);
+    position: relative;
+    top: 61px;
+    left: -57px;
+  }
+
+  35% {
+    transform: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  48% {
+    transform: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  56% {
+    transform: scaleY(-1) rotate(-50deg);
+    position: relative;
+    top: 61px;
+    left: -57px;
+  }
+ 
+
+  56% {
+    transform: scaleY(-1) rotate(-50deg);
+    position: relative;
+    top: 61px;
+    left: -57px;
+  }
+
+  68% {
+    transform: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  80% {
+    transform: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  90% {
+    transform: scaleY(-1) rotate(-50deg);
+    position: relative;
+    top: 61px;
+    left: -57px;
+  }
+  100%{
+    transform: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
   }
 }
